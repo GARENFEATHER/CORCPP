@@ -1,0 +1,37 @@
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; line-height: 25.6px;"><strong>Two dimensional integer knapsack problem</strong></p>
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; line-height: 25.6px;">Read an integer W and an integer V, which are the maximum&nbsp;allowed weight and volume capacity of a knapsack, respecitively. Read an integer&nbsp;n and then n types of item; each item type has four attributes: weight (integer), volume(integer), profit (integer), and number of items (integer). An item cannot be divided into pieces. Solve the knapsack problem and&nbsp;print total profit of packed items.&nbsp;</p>
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; line-height: 25.6px;">Hint: dynamic programming</p>
+<table style="width: 310px; height: 406px; color: #333333; line-height: 25.6px; overflow: auto; font-family: 'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 16px; margin-top: 0px; margin-bottom: 16px; display: block; border-collapse: collapse; word-break: keep-all; box-sizing: border-box; border-spacing: 0px;">
+<thead style="box-sizing: border-box;">
+<tr style="box-sizing: border-box; border-top-width: 1px; border-top-style: solid; border-top-color: #cccccc;"><th style="box-sizing: border-box; padding: 6px 13px; border: 1px solid #dddddd;">Sample Input</th><th style="box-sizing: border-box; padding: 6px 13px; border: 1px solid #dddddd;">Sample Output</th></tr>
+</thead>
+<tbody style="box-sizing: border-box;">
+<tr style="box-sizing: border-box; border-top-width: 1px; border-top-style: solid; border-top-color: #cccccc;">
+<td>
+<div>215 &nbsp;130</div>
+<div>10&nbsp;</div>
+<div>12 &nbsp;9 &nbsp;16 &nbsp;4</div>
+<div>16 &nbsp;4 &nbsp;5 &nbsp;4</div>
+<div>15 &nbsp;12 &nbsp;11 &nbsp;3</div>
+<div>7 &nbsp;17 &nbsp;5 &nbsp;2</div>
+<div>12 &nbsp;9 &nbsp;16 &nbsp;4</div>
+<div>13 &nbsp;2 &nbsp;17 &nbsp;1</div>
+<div>19 &nbsp;14 &nbsp;6 &nbsp;5</div>
+<div>9 &nbsp;8 &nbsp;1 &nbsp;2</div>
+<div>14 &nbsp;8 &nbsp;6 &nbsp;5</div>
+<div>18 &nbsp;1 &nbsp;12 &nbsp;3</div>
+</td>
+<td style="box-sizing: border-box; padding: 6px 13px; border: 1px solid #dddddd;">
+<p><strong>219</strong></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;Comment: an optimal solution of the sample is</p>
+<p>item 9 3 (18 1 &nbsp;12) &nbsp;215 &nbsp;130 &nbsp; - 183 + 36 = 219</p>
+<p>item 5 1 (13 2 &nbsp;17) &nbsp;161 &nbsp;127 &nbsp;- 166 + 17 = 183</p>
+<p>item 4 4 (12 9 &nbsp;16) &nbsp;148 &nbsp;125 &nbsp;- 102 + 64 = 166</p>
+<p>item 3 1 (7 17 &nbsp;5) &nbsp;100 &nbsp;89 &nbsp; &nbsp;- 97 + 5 = 102</p>
+<p>item 2 3 (15 12 &nbsp;11) &nbsp;93 &nbsp;72 &nbsp; - 64+33 = 97</p>
+<p>item 0 4 (12 9 &nbsp;16) &nbsp;48 &nbsp;36 &nbsp;- 64</p>
